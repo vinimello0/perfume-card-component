@@ -13,14 +13,17 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
+main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    }
+
 .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    width: 40%;
-    max-height: 30em;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 1em rgb(0, 0, 0, .2);
 }
@@ -51,6 +54,7 @@ body {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     flex-shrink: 1;
+    min-height: 100%;
 }
 
 span {
@@ -124,8 +128,8 @@ span {
     .wrapper {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
-        max-height: 100vw;
+        width: 50%;
+        min-height: 40%;
     }
 
     .imgBox {
@@ -133,7 +137,7 @@ span {
     }
 
     .imgBox img {
-        max-height: 20em;
+        max-height: 15em;
         aspect-ratio: 1;
         border-top-left-radius: 1.25rem;
         border-top-right-radius: 1.25rem;
@@ -143,6 +147,7 @@ span {
 
     .contentBox {
         width: 100%;
+        min-height: 15em;
         padding: 1em;
         border-bottom-left-radius: 1.25rem;
         border-bottom-right-radius: 1.25em;
